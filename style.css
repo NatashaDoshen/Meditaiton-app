@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.time-select button,
+.sound-picker,
+.player-container {
+  height: 80%;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+
+img.play {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 47%;
+  top: 40%;
+}
+
+img.replay {
+  display: none;
+}
+
+.time-display {
+  position: absolute;
+  display: flex;
+  left: 47%;
+  top: 75%;
+  color: white;
+  font-size: 50px;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+video {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+.time-select button,
+.sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.5 ease;
+}
+
+.time-select button:hover {
+  color: black;
+  background: white;
+}
+
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+}
+
+.sound-picker button:nth-child(1) {
+  background: #4972a1;
+  position: absolute;
+  display: flex;
+  left: 80%;
+}
+
+.sound-picker button:nth-child(2) {
+  background: #a14f49;
+  position: absolute;
+  display: flex;
+  left: 80%;
+  top: 50%;
+}
+
+.time-select button:nth-child(2) {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  width: 10%;
+  left: 5%;
+}
+
+.time-select button:nth-child(1) {
+  position: absolute;
+  display: flex;
+  top: 10%;
+  width: 10%;
+  left: 5%;
+}
+
+.time-select button:nth-child(3) {
+  position: absolute;
+  display: flex;
+  top: 90%;
+  width: 10%;
+  left: 5%;
+}
+
+.sound-picker button img {
+  height: 100%;
+}
